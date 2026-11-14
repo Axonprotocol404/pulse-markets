@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794688647,
+  "generatedAt": 1794692290,
   "engineWallet": "9vBCGRVRbhjDN4MABdDj5VqJGfb8PoTJFvRXe6P5HySt",
   "markets": [
     {
@@ -39,8 +39,8 @@
       "seedBps": 2081,
       "createdTs": 1794688571,
       "endTs": 1794692171,
-      "winner": null,
-      "settlePrice": null
+      "winner": "no",
+      "settlePrice": 69.88499999999999
     },
     {
       "pda": "5rY9QeyNYVrJG7rKZgis1Beo5PSJ9E6R4yUcdGGZAgGu",
@@ -49,8 +49,8 @@
       "seedBps": 5218,
       "createdTs": 1794688571,
       "endTs": 1794692171,
-      "winner": null,
-      "settlePrice": null
+      "winner": "no",
+      "settlePrice": 64562.72
     },
     {
       "pda": "51uSngkrCqwHy5K5qKQoap19YDzsfSjSMcBw8heqQAmW",
@@ -59,11 +59,231 @@
       "seedBps": 5289,
       "createdTs": 1794688603,
       "endTs": 1794692203,
+      "winner": "no",
+      "settlePrice": 1781.72
+    },
+    {
+      "pda": "2LpvJNeJtqSE2yi7RANrf5q3X5zV5FA3YgpFeZ53Pf8D",
+      "asset": "SOL",
+      "strike": 70,
+      "seedBps": 4924,
+      "createdTs": 1794692179,
+      "endTs": 1794695779,
+      "winner": null,
+      "settlePrice": null
+    },
+    {
+      "pda": "aXgqSCzEYHdFRgi548SyGvAZETeQeWE6xySoYoxNUyp",
+      "asset": "BTC",
+      "strike": 64500,
+      "seedBps": 5085,
+      "createdTs": 1794692179,
+      "endTs": 1794695779,
+      "winner": null,
+      "settlePrice": null
+    },
+    {
+      "pda": "5MxJ9GPnxNfWQ5CnHR9nEWbLFShxPTYnoEQCWDpasp4P",
+      "asset": "ETH",
+      "strike": 1780,
+      "seedBps": 4796,
+      "createdTs": 1794692179,
+      "endTs": 1794695779,
       "winner": null,
       "settlePrice": null
     }
   ],
   "activity": [
+    {
+      "ts": 1794692288,
+      "kind": "claim",
+      "agent": "marketmaker",
+      "pda": "5rY9QeyNYVrJG7rKZgis1Beo5PSJ9E6R4yUcdGGZAgGu",
+      "amount": 15.939873,
+      "sig": "3ekh8WspdFyieFC14i9wQnumndmMCarfAECesEy5tMVhp3JmibXpdNHPTE6cHPTj9BuFXpZpuAGq6oYDbw1hFB7D"
+    },
+    {
+      "ts": 1794692285,
+      "kind": "claim",
+      "agent": "marketmaker",
+      "pda": "Gmu8XKSoVyhinjTSxWUBikHSSdCr9raNFkfQK2eqwAkV",
+      "amount": 4.909666,
+      "sig": "2nHS61rLNhHXtztCbJVwekND9exnViYyD8VdJZqc8hC7VjmzvBQ1VAUwYdwsSYPFj9Vog4at6pVdvsLBPzr58jXZ"
+    },
+    {
+      "ts": 1794692282,
+      "kind": "claim",
+      "agent": "forecaster",
+      "pda": "51uSngkrCqwHy5K5qKQoap19YDzsfSjSMcBw8heqQAmW",
+      "amount": 36.696717,
+      "sig": "4Eh1xS3juakqxdi49HADQ4ioisTcS6qVKPFRbHgNsKknfAg4hZxnnDm4V7eBgCg4W3p5NZxHoXnf2R41hFE5zGmf"
+    },
+    {
+      "ts": 1794692279,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "5MxJ9GPnxNfWQ5CnHR9nEWbLFShxPTYnoEQCWDpasp4P",
+      "direction": "usdcToYes",
+      "amountUsdc": 4,
+      "expectedOut": 8.057423,
+      "sig": "3vWVs497yyutQFAme7Sz5LiBBvTPChegaph6VqGd7R8BxLDsMoz78Mi39FY8af7Kw9Hiib6tGW2yxg4n87i58XHy"
+    },
+    {
+      "ts": 1794692276,
+      "kind": "redeem_pair",
+      "agent": "marketmaker",
+      "pda": "aXgqSCzEYHdFRgi548SyGvAZETeQeWE6xySoYoxNUyp",
+      "amount": 7.807807,
+      "sig": "2aSdufnZ1RkPnFWYi9RQEGjkhq6ufuUHjzoiJ1chMBu1XXmMANtKL77X2W4cVA4S6XmXwiSPMgHsHm4Nm6XasAyn"
+    },
+    {
+      "ts": 1794692273,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "aXgqSCzEYHdFRgi548SyGvAZETeQeWE6xySoYoxNUyp",
+      "direction": "usdcToYes",
+      "amountUsdc": 4,
+      "expectedOut": 7.807835,
+      "sig": "58AwYwyDWr42YY5Qui5b7unLXzXDYVfbWNVHM5q7XEG9sZoqr4t5aTpaVntGGRtLYwdrom53KJtKmGjtGH52dTWY"
+    },
+    {
+      "ts": 1794692270,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "2LpvJNeJtqSE2yi7RANrf5q3X5zV5FA3YgpFeZ53Pf8D",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 7.449865,
+      "sig": "35J25jZNhYJAWvG2aUVJcigdeZdJJJrjL3kUzjsbpcMhv2mNjYBaRnQjW4z4sgiuRWorv2aZBKjjgvgfMLgEK4St"
+    },
+    {
+      "ts": 1794692258,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "51uSngkrCqwHy5K5qKQoap19YDzsfSjSMcBw8heqQAmW",
+      "what": "engine_winnings",
+      "amount": 81.763677,
+      "sig": "5PwgqZuZZQpyoMMywLbEN1eBr4gjv9efd99ReDrfYANxNy5E7T3cYyz3dSvK1eP3ZX5SooKJQRRpTKjXjNNkTk1"
+    },
+    {
+      "ts": 1794692255,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "51uSngkrCqwHy5K5qKQoap19YDzsfSjSMcBw8heqQAmW",
+      "what": "lp_residuals",
+      "sig": "aJg9h8rM3ppxD8Z3ERpQAmTZVRcgEquyMCwJFRWN1jEa8daJc1jGwq43Mn2oUVXsERbS9NvVd8xFxgpsQYdcvHZ"
+    },
+    {
+      "ts": 1794692253,
+      "kind": "market_resolved",
+      "asset": "ETH",
+      "pda": "51uSngkrCqwHy5K5qKQoap19YDzsfSjSMcBw8heqQAmW",
+      "strike": 1820,
+      "settlePrice": 1781.72,
+      "winner": "no",
+      "sig": "44dVDbcpEvoVK6toV8FSpueb4AbXcP3ENNMJwVoCUyYWVEWSZ4ncyrnJvTkqfwgMdgBnaWkXt1wdUk6gijbFavK"
+    },
+    {
+      "ts": 1794692243,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "5rY9QeyNYVrJG7rKZgis1Beo5PSJ9E6R4yUcdGGZAgGu",
+      "what": "engine_winnings",
+      "amount": 91.900126,
+      "sig": "2JXed2uV6Yxh4RDYBsja5Sru8CGnnfag3CegcJqvu7Bmo3fMwXSSfXrqzRNV98rx6GGbec98Bsx9xBizfc3AcRor"
+    },
+    {
+      "ts": 1794692240,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "5rY9QeyNYVrJG7rKZgis1Beo5PSJ9E6R4yUcdGGZAgGu",
+      "what": "lp_residuals",
+      "sig": "XnZmF7xZ8zwgmXgzc2CUFUyjqps9garUmJRcZZetCwbQCWmGLg7dX7gJuYeFuPPJXSzWVAjt2rUxWkxRHxSJmQ6"
+    },
+    {
+      "ts": 1794692238,
+      "kind": "market_resolved",
+      "asset": "BTC",
+      "pda": "5rY9QeyNYVrJG7rKZgis1Beo5PSJ9E6R4yUcdGGZAgGu",
+      "strike": 65400,
+      "settlePrice": 64562.72,
+      "winner": "no",
+      "sig": "5PhgE98qPM4FiCxzAkPkVubiXVSyrvL5C7XX8p3E1eDDpqb3LhJAkTZLHZGbYGo8GMHU4MtzuXg1ZkRMdzG5gjUF"
+    },
+    {
+      "ts": 1794692228,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "Gmu8XKSoVyhinjTSxWUBikHSSdCr9raNFkfQK2eqwAkV",
+      "what": "engine_winnings",
+      "amount": 99.010333,
+      "sig": "9h5F3sdAhJoxMxaApTahWyKdh9MVAq4f33ME2PNvM2V23wovjc6Gsg4TjDJrSgxf3zScLBKsyHeWybQ9PaNcCt3"
+    },
+    {
+      "ts": 1794692225,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "Gmu8XKSoVyhinjTSxWUBikHSSdCr9raNFkfQK2eqwAkV",
+      "what": "lp_residuals",
+      "sig": "5nvJ6y3Y5VUWZcNpBEMxWzahTNq3zuYMtTGKyosb5AQuC3CN7zPNhhwSY9EW1GbsmgkcXeA75zYKaocLYMRPPj4Y"
+    },
+    {
+      "ts": 1794692222,
+      "kind": "market_resolved",
+      "asset": "SOL",
+      "pda": "Gmu8XKSoVyhinjTSxWUBikHSSdCr9raNFkfQK2eqwAkV",
+      "strike": 72,
+      "settlePrice": 69.88499999999999,
+      "winner": "no",
+      "sig": "2cfD2yYmSTHh9YF9f8uJFRtAvSpsyePPPBog7hh3pMJ32pesorWvDSVEeteL3CjjTT6BD6Pt6R56tdccDztfaSgA"
+    },
+    {
+      "ts": 1794692206,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "aXgqSCzEYHdFRgi548SyGvAZETeQeWE6xySoYoxNUyp",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 7.872335,
+      "sig": "2HqKCSoKkwQ4H9bDCyU41a82vfdXPmeSVXdfPXwF6Cdya6bgZb8wzWgo5Er4g8yrvFjNddVX8KYekhtvHtPDTTPQ"
+    },
+    {
+      "ts": 1794692202,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "2LpvJNeJtqSE2yi7RANrf5q3X5zV5FA3YgpFeZ53Pf8D",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 7.629036,
+      "sig": "4KfntoCJFep1wNbibsFZ77CnztAYoBdb9nGnrv4NVtiLWYLBJT12tqUt3SkSyMBPsPEZq6T5g49vrPeDxBAMPmaM"
+    },
+    {
+      "ts": 1794692193,
+      "kind": "market_created",
+      "asset": "ETH",
+      "pda": "5MxJ9GPnxNfWQ5CnHR9nEWbLFShxPTYnoEQCWDpasp4P",
+      "strike": 1780,
+      "seedBps": 4796,
+      "sig": "4udRxoTuYpBZCVJy5sdeap7zitfnPeACg57TURF7UJgKfJ6qnXueH8UrFKjYvezCc7aJsdTAxiKqGDf2F499p415"
+    },
+    {
+      "ts": 1794692190,
+      "kind": "market_created",
+      "asset": "BTC",
+      "pda": "aXgqSCzEYHdFRgi548SyGvAZETeQeWE6xySoYoxNUyp",
+      "strike": 64500,
+      "seedBps": 5085,
+      "sig": "4By3vX8cNXgPySDyfdWCMSGjt3juy9GMDgTrB83o2C8ApwgnwLbrcFqVRqPSRF83Dy9xSF9qHSrJTgpoYYueNG83"
+    },
+    {
+      "ts": 1794692186,
+      "kind": "market_created",
+      "asset": "SOL",
+      "pda": "2LpvJNeJtqSE2yi7RANrf5q3X5zV5FA3YgpFeZ53Pf8D",
+      "strike": 70,
+      "seedBps": 4924,
+      "sig": "4kn9US1jyLd1SenotEb8Ck2yuiPMNWCdZcWNdcXueEjShjFUGUCo141hqUgY9gLXZS8VuFZHfYGjjciZtUy3sFNP"
+    },
     {
       "ts": 1794688645,
       "kind": "swap",
@@ -293,9 +513,9 @@
     }
   ],
   "totals": {
-    "marketsCreated": 6,
-    "agentSwaps": 6,
-    "agentVolumeUsdc": 38.84,
-    "claims": 7
+    "marketsCreated": 9,
+    "agentSwaps": 11,
+    "agentVolumeUsdc": 58.84,
+    "claims": 16
   }
 }
