@@ -1,0 +1,22 @@
+{
+  "name": "pulse-markets",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PulseMarkets - agent-run micro prediction markets on Predict's pm-AMM (Solana devnet)",
+  "scripts": {
+    "test": "node --test test/math.test.cjs",
+    "engine": "node engine/engine.cjs",
+    "agents": "node engine/agents.cjs",
+    "resolver": "node engine/resolver.cjs",
+    "fund": "node scripts/fund.cjs",
+    "status": "node scripts/status.cjs"
+  },
+  "dependencies": {
+    "@anchor-lang/core": "^1.0.0",
+    "@pm-amm/sdk": "^0.2.0",
+    "@pythnetwork/hermes-client": "^2.0.0",
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0"
+  }
+}
