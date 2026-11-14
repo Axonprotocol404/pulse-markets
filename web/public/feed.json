@@ -1,0 +1,91 @@
+{
+  "generatedAt": 1794680624,
+  "engineWallet": "9vBCGRVRbhjDN4MABdDj5VqJGfb8PoTJFvRXe6P5HySt",
+  "markets": [
+    {
+      "pda": "PnYc4F2JHadQTvAu9NKwUnxbRpM7SRM321J7jPzdaYq",
+      "asset": "SOL",
+      "strike": 73,
+      "seedBps": 2672,
+      "createdTs": 1794680120,
+      "endTs": 1794683720,
+      "winner": null,
+      "settlePrice": null
+    },
+    {
+      "pda": "4NP3tdduNbCJM1QkPATACtfkmiR6e73Z2mtepeZCU8UC",
+      "asset": "BTC",
+      "strike": 65900,
+      "seedBps": 4690,
+      "createdTs": 1794680120,
+      "endTs": 1794683720,
+      "winner": null,
+      "settlePrice": null
+    },
+    {
+      "pda": "DUtemWo2wRBn1GyrkQMKQAAc76Xme5UXagFAwDanSj4o",
+      "asset": "ETH",
+      "strike": 1835,
+      "seedBps": 5551,
+      "createdTs": 1794680120,
+      "endTs": 1794683720,
+      "winner": null,
+      "settlePrice": null
+    }
+  ],
+  "activity": [
+    {
+      "ts": 1794680162,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "DUtemWo2wRBn1GyrkQMKQAAc76Xme5UXagFAwDanSj4o",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 8.653099,
+      "sig": "5oogH9zcYUTeeyqdwcHknoKCkhsmSABxKoBKZDNDqL5aHpcQMgk8Mp9zSepUeYwofhYzu6qySnPQsRxHb1rUpxtQ"
+    },
+    {
+      "ts": 1794680159,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "PnYc4F2JHadQTvAu9NKwUnxbRpM7SRM321J7jPzdaYq",
+      "direction": "usdcToYes",
+      "amountUsdc": 4,
+      "expectedOut": 13.735981,
+      "sig": "66f8X9AWc82fArUisi8HRTPqPHRBz8WD9NPErMh4XZaMCjbYEfADRffrLre2ydCAh2ThJDCJcGWVZdXxHyGr8FLt"
+    },
+    {
+      "ts": 1794680132,
+      "kind": "market_created",
+      "asset": "ETH",
+      "pda": "DUtemWo2wRBn1GyrkQMKQAAc76Xme5UXagFAwDanSj4o",
+      "strike": 1835,
+      "seedBps": 5551,
+      "sig": "4xbkehsu2iH8k4Wem3kfQuV5F7AyyS42GVWCK1U6fSNDrrBQkWsd7zqX3PyfnRzhkFhjL9qQfgxStddSZrVCZDXb"
+    },
+    {
+      "ts": 1794680128,
+      "kind": "market_created",
+      "asset": "BTC",
+      "pda": "4NP3tdduNbCJM1QkPATACtfkmiR6e73Z2mtepeZCU8UC",
+      "strike": 65900,
+      "seedBps": 4690,
+      "sig": "3viqNv3ePf9QAeTVsLjVKhwFK2fqJhc5RhRG9vqSTUuoWMtw9C3GZZfvjrdFj4ns69giWJm12Aep2t17PK1Yy37t"
+    },
+    {
+      "ts": 1794680125,
+      "kind": "market_created",
+      "asset": "SOL",
+      "pda": "PnYc4F2JHadQTvAu9NKwUnxbRpM7SRM321J7jPzdaYq",
+      "strike": 73,
+      "seedBps": 2672,
+      "sig": "5E6gsV8jjqD2rTt37FVmtF294y6oLNctaqg6GsRn4AXdzC6oZj6zrsSZkWB6T9RhMCZ3Dkkub8DigXrfrGLt7Paz"
+    }
+  ],
+  "totals": {
+    "marketsCreated": 3,
+    "agentSwaps": 2,
+    "agentVolumeUsdc": 8,
+    "claims": 0
+  }
+}
