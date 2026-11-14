@@ -27,11 +27,12 @@ runs the market end-to-end, with no human in the loop:
 All state changes are real devnet transactions; every agent action in the UI's
 activity feed links to its Solscan record.
 
-**Settlement oracle:** spot prices come from a median of two independent public
-exchanges (Kraken + Coinbase), sampled 60 s after expiry for resolution and
-live for seeding. The feed layer is oracle-agnostic: Pyth Hermes IDs for
-SOL/BTC/ETH are verified and wired behind config, ready to swap in where the
-endpoint is openly reachable.
+**Settlement oracle:** each market settles on the median close of the
+1-minute candle at its expiry minute across independent public exchanges
+(Kraken + Coinbase, Binance as fallback) — reproducible from public history
+at any time after expiry; seeding uses the live median spot. The feed layer
+is oracle-agnostic: Pyth Hermes IDs for SOL/BTC/ETH are verified and wired
+behind config, ready to swap in where the endpoint is openly reachable.
 
 ## Layout
 

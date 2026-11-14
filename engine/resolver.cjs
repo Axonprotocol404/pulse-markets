@@ -4,16 +4,18 @@
  *
  * Predict's pm-AMM has manual resolution (the market creator is the
  * authority) and no oracle. This keeper is the oracle adapter: once a market
- * expires it reads the median spot from two independent public feeds and
- * resolves YES iff settlement price >= strike. Every settlement is logged
- * with the price and sources used.
+ * expires it settles from the median close of the 1-minute candle at the
+ * expiry minute (Kraken + Coinbase, Binance fallback — reproducible from
+ * public history at any later time) and resolves YES iff settlement price
+ * >= strike. It then claims the engine's LP residuals. Every settlement is
+ * logged with the price and sources used.
  *
  * Usage: node engine/resolver.cjs
  */
 const { PublicKey } = require("@solana/web3.js");
 const config = require("./config.cjs");
-const { loadKeypair, makeClient } = require("./chain.cjs");
-const { getSpot } = require("./feed.cjs");
+const { loadKeypair, makeClient, tokenBalance } = require("./chain.cjs");
+const { getSpotAt } = require("./feed.cjs");
 const { fetchMarkets } = require("./quotes.cjs");
 const state = require("./state.cjs");
 
@@ -44,12 +46,13 @@ const state = require("./state.cjs");
         continue;
       }
       const asset = config.ASSETS.find((a) => a.symbol === entry.asset);
-      const spot = await getSpot(asset);
+      const spot = await getSpotAt(asset, entry.endTs);
       const side = spot.price >= entry.strike ? "yes" : "no";
       const sig = await client.send.resolveMarket(new PublicKey(entry.pda), side);
       entry.resolved = true;
       entry.winner = side;
       entry.settlePrice = spot.price;
+      entry.settleTs = spot.ts;
       entry.settleSources = spot.sources;
       entry.settleSig = sig;
       state.record(st, "market_resolved", {
@@ -61,6 +64,26 @@ const state = require("./state.cjs");
         sig,
       });
       console.log(`${entry.asset} ${entry.pda}: strike=${entry.strike} settle=${spot.price} -> ${side.toUpperCase()} sig=${sig}`);
+      try {
+        const csig = await client.send.claimLpResiduals(new PublicKey(entry.pda));
+        state.record(st, "claim", { agent: "engine", pda: entry.pda, what: "lp_residuals", sig: csig });
+        console.log(`${entry.asset} ${entry.pda}: LP residuals claimed sig=${csig}`);
+      } catch (e) {
+        console.log(`${entry.asset} ${entry.pda}: LP residual claim note: ${String(e.message).slice(0, 160)}`);
+      }
+      // LP residuals arrive as outcome tokens: claim the engine's winning
+      // side so the deposited capital recycles into the next market batch.
+      try {
+        const { connection } = makeClient(kp);
+        const before = await tokenBalance(connection, kp.publicKey, config.MUSDC_MINT);
+        const wsig = await client.send.claimWinnings(new PublicKey(entry.pda));
+        const after = await tokenBalance(connection, kp.publicKey, config.MUSDC_MINT);
+        const amount = Number((after - before).toFixed(6));
+        state.record(st, "claim", { agent: "engine", pda: entry.pda, what: "engine_winnings", amount, sig: wsig });
+        console.log(`${entry.asset} ${entry.pda}: engine winnings claimed ${amount} mUSDC sig=${wsig}`);
+      } catch (e) {
+        console.log(`${entry.asset} ${entry.pda}: engine winnings note: ${String(e.message).slice(0, 160)}`);
+      }
     } catch (e) {
       console.error(`${entry.asset} ${entry.pda}: resolve FAILED ${e.message}`);
       state.record(st, "resolve_failed", { pda: entry.pda, error: String(e.message).slice(0, 300) });

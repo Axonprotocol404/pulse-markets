@@ -21,18 +21,18 @@ interface FeedMarket {
 interface FeedEvent {
   ts: number;
   kind: string;
-  actor?: string;
+  agent?: string;
   asset?: string;
-  market: string;
-  tx?: string;
+  pda?: string;
+  sig?: string;
   direction?: string;
   amountUsdc?: number;
   fairYes?: number;
-  marketYes?: number;
   winner?: string;
   settlePrice?: number;
   amount?: number;
   what?: string;
+  strike?: number;
 }
 interface Feed {
   generatedAt: number;
@@ -258,22 +258,32 @@ export default function App() {
         state is read from chain above.
       </p>
       <ul className="feed">
-        {(feed?.activity ?? []).slice(0, 14).map((ev, i) => (
-          <li key={i}>
-            <span className={`kind k-${ev.kind}`}>{ev.kind.replace("_", " ")}</span>
-            <span className="what">
-              {ev.kind === "market_created" && <>engine opened {ev.asset} market</>}
-              {ev.kind === "swap" && (
-                <>{ev.actor} bought {ev.direction === "usdcToYes" ? "YES" : "NO"} on {ev.asset} for {ev.amountUsdc?.toFixed(2)} mUSDC
-                  {typeof ev.fairYes === "number" && <> (model fair value {(ev.fairYes * 100).toFixed(0)}%)</>}</>
-              )}
-              {ev.kind === "resolved" && <>resolver settled {ev.asset} → {ev.winner?.toUpperCase()} at ${ev.settlePrice?.toLocaleString()}</>}
-              {ev.kind === "claim" && <>{ev.actor} claimed {ev.amount?.toFixed(2)} mUSDC ({ev.what})</>}
-            </span>
-            <span className="when">{hhmm(ev.ts)}</span>
-            {ev.tx && <a href={solscanTx(ev.tx)} target="_blank" rel="noreferrer">tx ↗</a>}
-          </li>
-        ))}
+        {(feed?.activity ?? []).slice(0, 14).map((ev, i) => {
+          const assetOf = ev.asset ?? feed?.markets.find((m) => m.pda === ev.pda)?.asset ?? "";
+          const cls = ev.kind === "market_resolved" ? "resolved" : ev.kind;
+          return (
+            <li key={i}>
+              <span className={`kind k-${cls}`}>{cls.replace(/_/g, " ")}</span>
+              <span className="what">
+                {ev.kind === "market_created" && <>engine opened an {assetOf} market (strike ${ev.strike?.toLocaleString()})</>}
+                {ev.kind === "swap" && (
+                  <>{ev.agent} bought {ev.direction === "usdcToYes" ? "YES" : "NO"} on {assetOf} for {ev.amountUsdc?.toFixed(2)} mUSDC
+                    {typeof ev.fairYes === "number" && <> (model fair value {(ev.fairYes * 100).toFixed(0)}%)</>}</>
+                )}
+                {ev.kind === "market_resolved" && <>resolver settled {assetOf} → {ev.winner?.toUpperCase()} at ${ev.settlePrice?.toLocaleString()}</>}
+                {ev.kind === "claim" && (
+                  <>{ev.agent} claimed {typeof ev.amount === "number" ? `${ev.amount.toFixed(2)} mUSDC` : "payout"} ({ev.what ?? "winnings"})</>
+                )}
+                {ev.kind === "redeem_pair" && <>{ev.agent} redeemed a YES+NO pair on {assetOf}</>}
+                {(ev.kind === "resolve_failed" || ev.kind === "market_create_failed") && (
+                  <>an attempt failed (feed hiccup) — the keeper retries automatically</>
+                )}
+              </span>
+              <span className="when">{hhmm(ev.ts)}</span>
+              {ev.sig && <a href={solscanTx(ev.sig)} target="_blank" rel="noreferrer">tx ↗</a>}
+            </li>
+          );
+        })}
       </ul>
 
       <footer>
