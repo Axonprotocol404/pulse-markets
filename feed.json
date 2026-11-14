@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794684838,
+  "generatedAt": 1794688647,
   "engineWallet": "9vBCGRVRbhjDN4MABdDj5VqJGfb8PoTJFvRXe6P5HySt",
   "markets": [
     {
@@ -31,9 +31,112 @@
       "endTs": 1794683720,
       "winner": "no",
       "settlePrice": 1829.7
+    },
+    {
+      "pda": "Gmu8XKSoVyhinjTSxWUBikHSSdCr9raNFkfQK2eqwAkV",
+      "asset": "SOL",
+      "strike": 72,
+      "seedBps": 2081,
+      "createdTs": 1794688571,
+      "endTs": 1794692171,
+      "winner": null,
+      "settlePrice": null
+    },
+    {
+      "pda": "5rY9QeyNYVrJG7rKZgis1Beo5PSJ9E6R4yUcdGGZAgGu",
+      "asset": "BTC",
+      "strike": 65400,
+      "seedBps": 5218,
+      "createdTs": 1794688571,
+      "endTs": 1794692171,
+      "winner": null,
+      "settlePrice": null
+    },
+    {
+      "pda": "51uSngkrCqwHy5K5qKQoap19YDzsfSjSMcBw8heqQAmW",
+      "asset": "ETH",
+      "strike": 1820,
+      "seedBps": 5289,
+      "createdTs": 1794688603,
+      "endTs": 1794692203,
+      "winner": null,
+      "settlePrice": null
     }
   ],
   "activity": [
+    {
+      "ts": 1794688645,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "5rY9QeyNYVrJG7rKZgis1Beo5PSJ9E6R4yUcdGGZAgGu",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 7.859253,
+      "sig": "5FeU91hYi15yQEmPNqK8QSyZMkk4Ms111kdF9wM1BcsC7oL1i5AMVVRaT4Lw5hdV6wEtinj8cTnKiaBN4R1bjyzJ"
+    },
+    {
+      "ts": 1794688642,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "Gmu8XKSoVyhinjTSxWUBikHSSdCr9raNFkfQK2eqwAkV",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 4.909667,
+      "sig": "5J33Vn3byvhrWDjUFDvHTyXrxomSKa2jFZoX3mXe3Eeyhek9XSuWVqumFUFm8CrZKS9qaY4z7vdHckxmsgeaGZrY"
+    },
+    {
+      "ts": 1794688619,
+      "kind": "swap",
+      "agent": "forecaster",
+      "pda": "51uSngkrCqwHy5K5qKQoap19YDzsfSjSMcBw8heqQAmW",
+      "direction": "usdcToNo",
+      "amountUsdc": 18.837137317627988,
+      "expectedOut": 36.697019,
+      "sig": "3Y4wMTYhdQ1b179zy7KuH15uGh5pEYpWf6xWASuAbLKRVote9kZbQYbJhDhhDkXAns1vUHdfQhQecaLztxVmg2rk"
+    },
+    {
+      "ts": 1794688616,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "5rY9QeyNYVrJG7rKZgis1Beo5PSJ9E6R4yUcdGGZAgGu",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 8.080664,
+      "sig": "4q7B7z8Hwg2yjBuwDggfCTF6kpCyPrw77N8xX8TMJZHvuoReAbeKknmPwb1v5az2Exu9WKY4iqbKGTieJMJdAsdH"
+    },
+    {
+      "ts": 1794688607,
+      "kind": "market_created",
+      "asset": "ETH",
+      "pda": "51uSngkrCqwHy5K5qKQoap19YDzsfSjSMcBw8heqQAmW",
+      "strike": 1820,
+      "seedBps": 5289,
+      "sig": "1qsTk5jdEgX3AWT9XrrxSVjZKNMcArJRiu9kBWKg19isfc5Z7eCqEwQfHATjJg6fDJMm7fWGesTGRGZ5y7dSxZg"
+    },
+    {
+      "ts": 1794688579,
+      "kind": "market_create_failed",
+      "asset": "ETH",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
+    {
+      "ts": 1794688578,
+      "kind": "market_created",
+      "asset": "BTC",
+      "pda": "5rY9QeyNYVrJG7rKZgis1Beo5PSJ9E6R4yUcdGGZAgGu",
+      "strike": 65400,
+      "seedBps": 5218,
+      "sig": "3bYcx6po1aoAs6Dv6VictP12TnLdJzTW2QD86SKhQj46EEW7C2EZd9xakV2yy195bnUf9NbzuCDdXk18SUhf5txb"
+    },
+    {
+      "ts": 1794688575,
+      "kind": "market_created",
+      "asset": "SOL",
+      "pda": "Gmu8XKSoVyhinjTSxWUBikHSSdCr9raNFkfQK2eqwAkV",
+      "strike": 72,
+      "seedBps": 2081,
+      "sig": "4AJDEuEChp1YN3S56vAz7Wgf3tfZ5yr33ZKfXA9gRgC4CFfJBwFbzEaZPpuiaEgbHs3dFmzhvqTQ9SUrxsWdRJGP"
+    },
     {
       "ts": 1794684827,
       "kind": "claim",
@@ -190,9 +293,9 @@
     }
   ],
   "totals": {
-    "marketsCreated": 3,
-    "agentSwaps": 2,
-    "agentVolumeUsdc": 8,
+    "marketsCreated": 6,
+    "agentSwaps": 6,
+    "agentVolumeUsdc": 38.84,
     "claims": 7
   }
 }
