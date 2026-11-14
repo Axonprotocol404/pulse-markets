@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794680624,
+  "generatedAt": 1794684596,
   "engineWallet": "9vBCGRVRbhjDN4MABdDj5VqJGfb8PoTJFvRXe6P5HySt",
   "markets": [
     {
@@ -34,6 +34,24 @@
     }
   ],
   "activity": [
+    {
+      "ts": 1794683932,
+      "kind": "resolve_failed",
+      "pda": "DUtemWo2wRBn1GyrkQMKQAAc76Xme5UXagFAwDanSj4o",
+      "error": "no price source for ETH (kraken: This operation was aborted; coinbase: This operation was aborted)"
+    },
+    {
+      "ts": 1794683902,
+      "kind": "resolve_failed",
+      "pda": "4NP3tdduNbCJM1QkPATACtfkmiR6e73Z2mtepeZCU8UC",
+      "error": "no price source for BTC (kraken: This operation was aborted; coinbase: This operation was aborted)"
+    },
+    {
+      "ts": 1794683872,
+      "kind": "resolve_failed",
+      "pda": "PnYc4F2JHadQTvAu9NKwUnxbRpM7SRM321J7jPzdaYq",
+      "error": "no price source for SOL (kraken: This operation was aborted; coinbase: This operation was aborted)"
+    },
     {
       "ts": 1794680162,
       "kind": "swap",
