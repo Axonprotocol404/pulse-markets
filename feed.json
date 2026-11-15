@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794754225,
+  "generatedAt": 1794757842,
   "engineWallet": "9vBCGRVRbhjDN4MABdDj5VqJGfb8PoTJFvRXe6P5HySt",
   "markets": [
     {
@@ -479,11 +479,82 @@
       "seedBps": 6247,
       "createdTs": 1794754110,
       "endTs": 1794757710,
-      "winner": null,
-      "settlePrice": null
+      "winner": "yes",
+      "settlePrice": 71.045
     }
   ],
   "activity": [
+    {
+      "ts": 1794757841,
+      "kind": "claim",
+      "agent": "marketmaker",
+      "pda": "3KnTHr25KDZEBw5eWkzQPA5DkX2HVxg4qYo2bZnyk3gt",
+      "amount": 6.206804,
+      "sig": "38a9LD2iUK3jbEq1nTKxXwnt3mbde4wXY8raRzXC3SU5PQcjsMhxnxkJTEJGUWZ3iZnnBiNHPjvKGDHVngp9oEDs"
+    },
+    {
+      "ts": 1794757833,
+      "kind": "claim",
+      "agent": "forecaster",
+      "pda": "3KnTHr25KDZEBw5eWkzQPA5DkX2HVxg4qYo2bZnyk3gt",
+      "amount": 34.200664,
+      "sig": "4182DkWfPzap6Jpc1a5YB7pFniTfZXRzYJ7JRaPPjvmoh8vdfnJaDfzbz4a9bynx8f8FVjyZF8BBUkCj659AagFj"
+    },
+    {
+      "ts": 1794757812,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "3KnTHr25KDZEBw5eWkzQPA5DkX2HVxg4qYo2bZnyk3gt",
+      "what": "engine_winnings",
+      "amount": 88.01253,
+      "sig": "4DvVCmiTm6UEatbhQrcVrjrVsLTdb4Xu16ABsmhMZUTBQHGkM6jBpoC3iFbkrSorLbCh7KByAE9nCTsXN515orAp"
+    },
+    {
+      "ts": 1794757809,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "3KnTHr25KDZEBw5eWkzQPA5DkX2HVxg4qYo2bZnyk3gt",
+      "what": "lp_residuals",
+      "sig": "4rQd53q9VbUZtd7uDK8f3CFESRvByH8Qc8ozcR1VSjBW6yTF7hfovXA7onnzK3S3qkt7TiaodWnkMLxytq6m2bti"
+    },
+    {
+      "ts": 1794757806,
+      "kind": "market_resolved",
+      "asset": "SOL",
+      "pda": "3KnTHr25KDZEBw5eWkzQPA5DkX2HVxg4qYo2bZnyk3gt",
+      "strike": 71,
+      "settlePrice": 71.045,
+      "winner": "yes",
+      "sig": "3AjNgxb7XTs4Rb9JdAEBhmH5M7YaeXdDUXeSWG8iKnjCDUtARbV6zVZZD8bm3D82b7H2nqPmFU4wsoG6RuKMreWa"
+    },
+    {
+      "ts": 1794757003,
+      "kind": "swap",
+      "agent": "forecaster",
+      "pda": "3KnTHr25KDZEBw5eWkzQPA5DkX2HVxg4qYo2bZnyk3gt",
+      "direction": "usdcToYes",
+      "amountUsdc": 25,
+      "expectedOut": 34.205038,
+      "sig": "5J2zoh6WW3Lxx7hYz1SZg1XdrUgUAfWKcUbPgcJrfBCWG2z8oX63oAtUCjr2XbQrveQjFhvWj868AHEuUB2wnNY2"
+    },
+    {
+      "ts": 1794756987,
+      "kind": "market_create_failed",
+      "asset": "ETH",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
+    {
+      "ts": 1794756986,
+      "kind": "market_create_failed",
+      "asset": "BTC",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
+    {
+      "ts": 1794756983,
+      "kind": "market_create_failed",
+      "asset": "SOL",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
     {
       "ts": 1794754217,
       "kind": "claim",
@@ -911,93 +982,12 @@
       "amountUsdc": 4,
       "expectedOut": 7.349825,
       "sig": "2DS9pc9Vfpum4D2aifnx1WvDt6eAMUKYacsEaiL6nd8BCZfhGU8pYSAdELAKi1uj7w4iRBnBxENGj3p9Tp6i37VU"
-    },
-    {
-      "ts": 1794739508,
-      "kind": "redeem_pair",
-      "agent": "marketmaker",
-      "pda": "Hd6xjQGAr6FuzDWzFYe9rDDZ4GtVciknP2TUaeW2V6qD",
-      "amount": 7.93887,
-      "sig": "7bzcULGSp9gvM9FjFK7xivDV6ispBXHbQiPKNrfqsifcuiMzCtT6FtNH3Zqr52a5dk13e58HzkukVFwcQQTjzhY"
-    },
-    {
-      "ts": 1794739505,
-      "kind": "swap",
-      "agent": "marketmaker",
-      "pda": "Hd6xjQGAr6FuzDWzFYe9rDDZ4GtVciknP2TUaeW2V6qD",
-      "direction": "usdcToYes",
-      "amountUsdc": 4,
-      "expectedOut": 7.938902,
-      "sig": "LwNBH4pWAgJAnES6M68NEt5Rm7EsUzCh568a4sci1GMCTp2aZ8sMxh885SGacZUQfJC5PBF9NYWLyEGpLWeqKiB"
-    },
-    {
-      "ts": 1794739448,
-      "kind": "swap",
-      "agent": "marketmaker",
-      "pda": "m4VuMsp2b9dpi9eW3SBuRBzDrFFBGQqWqzyPMk9TzY6",
-      "direction": "usdcToNo",
-      "amountUsdc": 4,
-      "expectedOut": 8.015496,
-      "sig": "4WqWUo5mjTTnRvmdbUmbrKL7hn7Zr38ptEJviBsQDxTEozPTRfVjUnsfZTMbqGLGST2odRkawWj38uYPUNkcqbum"
-    },
-    {
-      "ts": 1794739444,
-      "kind": "swap",
-      "agent": "marketmaker",
-      "pda": "Hd6xjQGAr6FuzDWzFYe9rDDZ4GtVciknP2TUaeW2V6qD",
-      "direction": "usdcToNo",
-      "amountUsdc": 4,
-      "expectedOut": 7.740035,
-      "sig": "5Bc8mVovGyPJGwLXZ4rGrvsaonEH7Y4eXKAqAEBdDjbtpq7QUkr4wfhsXFwz8ZEhtyvfzSijQdVnXkpTyHEbvhSu"
-    },
-    {
-      "ts": 1794739348,
-      "kind": "swap",
-      "agent": "marketmaker",
-      "pda": "Hd6xjQGAr6FuzDWzFYe9rDDZ4GtVciknP2TUaeW2V6qD",
-      "direction": "usdcToNo",
-      "amountUsdc": 4,
-      "expectedOut": 7.949513,
-      "sig": "DCMwZEuJioaGhtSrhPzRGQhNsqR2qmWJHerq6vZYTh3UNudx5PQz2TtYknHF1b1cawaw8jpPqKJ9vii5FRLMaVz"
-    },
-    {
-      "ts": 1794739281,
-      "kind": "market_created",
-      "asset": "ETH",
-      "pda": "3ktWXyTFVkXVJYH2grDNc2iFUtwG48BydR4Uo7sktpSw",
-      "strike": 1825,
-      "seedBps": 5268,
-      "sig": "66xrafky7PTqATbFwJu9QHV6HNjnuMnJk7UHspuNUWqjFY1dx13H5dzSJVZFCp4GbJQgQQ3XNZ3CTFeCBa8GWjv3"
-    },
-    {
-      "ts": 1794739230,
-      "kind": "market_created",
-      "asset": "BTC",
-      "pda": "m4VuMsp2b9dpi9eW3SBuRBzDrFFBGQqWqzyPMk9TzY6",
-      "strike": 65500,
-      "seedBps": 5179,
-      "sig": "25PTYVkrM9FZAgdrk5JrhLEbai3qBegY7zFjhiSNz94bWuT8VCrr9j68wgVVMWr6rML1bERD3tr5jvjMrshtziF3"
-    },
-    {
-      "ts": 1794739226,
-      "kind": "market_created",
-      "asset": "SOL",
-      "pda": "Hd6xjQGAr6FuzDWzFYe9rDDZ4GtVciknP2TUaeW2V6qD",
-      "strike": 72,
-      "seedBps": 5136,
-      "sig": "4MqXBUxU9zKkYiGqSV9DfjmFYDyUmMtdYwfRWQKVNbL3UcPfqeZ8F6HPdPpaKkj3kuwg1KVn72u4EQshb3MroTU4"
-    },
-    {
-      "ts": 1794739125,
-      "kind": "market_create_failed",
-      "asset": "ETH",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     }
   ],
   "totals": {
     "marketsCreated": 48,
-    "agentSwaps": 54,
-    "agentVolumeUsdc": 358.29,
-    "claims": 114
+    "agentSwaps": 55,
+    "agentVolumeUsdc": 383.29,
+    "claims": 118
   }
 }
