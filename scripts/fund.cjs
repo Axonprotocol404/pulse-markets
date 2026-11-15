@@ -33,7 +33,10 @@ async function report(conn, label, kp) {
   }
   for (const [label, kp] of wallets) {
     const before = await report(conn, `${label} (before)`, kp);
-    if (before.musdc < 200 || before.sol < 0.05) {
+    // Threshold SOL dinaikkan 0,05 -> 0,15 (15 Nov 2026): satu batch 3 market
+    // butuh ~0,106 SOL rent, ambang lama terbukti membuat create market
+    // gagal di tengah batch (run 05:35 WIB). Klaim faucet 1x/wallet/jam.
+    if (before.musdc < 200 || before.sol < 0.15) {
       const r = await claimFaucet(kp.publicKey);
       console.log(`${label}: faucet claim -> HTTP ${r.status} ${r.text.slice(0, 160)}`);
     } else {
