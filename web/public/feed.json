@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794731910,
+  "generatedAt": 1794735563,
   "engineWallet": "9vBCGRVRbhjDN4MABdDj5VqJGfb8PoTJFvRXe6P5HySt",
   "markets": [
     {
@@ -394,6 +394,24 @@
     }
   ],
   "activity": [
+    {
+      "ts": 1794735470,
+      "kind": "market_create_failed",
+      "asset": "ETH",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
+    {
+      "ts": 1794735468,
+      "kind": "market_create_failed",
+      "asset": "BTC",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
+    {
+      "ts": 1794735467,
+      "kind": "market_create_failed",
+      "asset": "SOL",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
     {
       "ts": 1794731887,
       "kind": "claim",
@@ -895,34 +913,6 @@
       "pda": "Do5p2EZ3uTzCsQaG9mt2oPaskiRs75onTJ1Umdy5HZKq",
       "what": "lp_residuals",
       "sig": "4tgMWs7TpHjGFXBGEAkjGSsuTQfL5cpFwHFkVtvfSvt9xhvNKi3PAEhR1yiZspCmRczMmraSQsrhbNBDFPsobTLc"
-    },
-    {
-      "ts": 1794721048,
-      "kind": "market_resolved",
-      "asset": "SOL",
-      "pda": "Do5p2EZ3uTzCsQaG9mt2oPaskiRs75onTJ1Umdy5HZKq",
-      "strike": 71,
-      "settlePrice": 70.83,
-      "winner": "no",
-      "sig": "227Fkehc5nNj2cGtdjqV7xcXRZSEi38PoVbzoeLX47aTy5Gm8Cx1LhBD5dGceYKhZhcKTSP5p6UUPkkB5QvRAtYN"
-    },
-    {
-      "ts": 1794720985,
-      "kind": "market_created",
-      "asset": "ETH",
-      "pda": "GtRtEtc5jhJwMQC39Zrk3GweJzF9WV6kEhTjcWxxy4fY",
-      "strike": 1805,
-      "seedBps": 4998,
-      "sig": "a3gstsgTUpUfswGi5M1nF1y9DBYQanL6BP55mrbHWXNVVHzv8ThSxAadoDxnoz9bX19vheeQNBY3XwwGKb3GfTG"
-    },
-    {
-      "ts": 1794720982,
-      "kind": "market_created",
-      "asset": "BTC",
-      "pda": "FSkLHKk8yvEq5CJt365bS9wmsYnpmpmFuutk14DQBxyR",
-      "strike": 64800,
-      "seedBps": 4995,
-      "sig": "3ddDPziwnnrmzQCsLBkZytGHN7EmBUA8UdD7iRk48gJVzSWib6EeiQZPiJUUrSrGiDVq46USHThqRqqsY9p2k1V1"
     }
   ],
   "totals": {
