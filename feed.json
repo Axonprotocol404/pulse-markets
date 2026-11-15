@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794728337,
+  "generatedAt": 1794731910,
   "engineWallet": "9vBCGRVRbhjDN4MABdDj5VqJGfb8PoTJFvRXe6P5HySt",
   "markets": [
     {
@@ -369,8 +369,8 @@
       "seedBps": 5173,
       "createdTs": 1794728182,
       "endTs": 1794731782,
-      "winner": null,
-      "settlePrice": null
+      "winner": "yes",
+      "settlePrice": 70.405
     },
     {
       "pda": "A714ZUN8cKRMDKf8ndjfmMdkQKvAp9HP48pJzwihvoGa",
@@ -379,8 +379,8 @@
       "seedBps": 4784,
       "createdTs": 1794728182,
       "endTs": 1794731782,
-      "winner": null,
-      "settlePrice": null
+      "winner": "yes",
+      "settlePrice": 64586.365000000005
     },
     {
       "pda": "2mfEbWJajyDAg42vLYppXc3hsQb67fMiQXegmfDjfA8X",
@@ -389,11 +389,110 @@
       "seedBps": 5107,
       "createdTs": 1794728182,
       "endTs": 1794731782,
-      "winner": null,
-      "settlePrice": null
+      "winner": "yes",
+      "settlePrice": 1796.7849999999999
     }
   ],
   "activity": [
+    {
+      "ts": 1794731887,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "2mfEbWJajyDAg42vLYppXc3hsQb67fMiQXegmfDjfA8X",
+      "what": "engine_winnings",
+      "amount": 103.919999,
+      "sig": "3Pacg3gzhduAmnubKCmPELDefAoUtAnAFMEdbi4Dnjqx1WKFxwNKNc6bVuoLwWqFrNuMpdqtCX6nUA52yHrnQhV9"
+    },
+    {
+      "ts": 1794731884,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "2mfEbWJajyDAg42vLYppXc3hsQb67fMiQXegmfDjfA8X",
+      "what": "lp_residuals",
+      "sig": "656SJ97aqouJyvH4MgRqHfKcxNTjDZRMRZRLSSrXq7f7DTFtJSv2X6AZMXkEV1v1kKWzLubKfv6NZ7E2yB5S4brP"
+    },
+    {
+      "ts": 1794731881,
+      "kind": "market_resolved",
+      "asset": "ETH",
+      "pda": "2mfEbWJajyDAg42vLYppXc3hsQb67fMiQXegmfDjfA8X",
+      "strike": 1785,
+      "settlePrice": 1796.7849999999999,
+      "winner": "yes",
+      "sig": "2ZivCsrKMZxHYpEmXzne7MPranYpjjPTbPhDvGo3yrmMx2CWpd33h2CaM8GizhG3cbjNMpKtZ4yNNH1WR8rJycc6"
+    },
+    {
+      "ts": 1794731871,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "A714ZUN8cKRMDKf8ndjfmMdkQKvAp9HP48pJzwihvoGa",
+      "what": "engine_winnings",
+      "amount": 103.919999,
+      "sig": "2odcfD9NMZ1YmFBcS2RHru5RqwbguZFv713a5adCaCBTZEJiMmDdkMq9RRQ8TH7bHLBFVqrzJus115vvkmkmFhhB"
+    },
+    {
+      "ts": 1794731867,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "A714ZUN8cKRMDKf8ndjfmMdkQKvAp9HP48pJzwihvoGa",
+      "what": "lp_residuals",
+      "sig": "2VdnjsE3Cm1G5skzxccNpGYavN2GFrzbWQC4Zx8vXfbZz7AKHZPYFRKnRnD9ZJLQT8d2rJ97LSkHtEeyuPzLZXBz"
+    },
+    {
+      "ts": 1794731865,
+      "kind": "market_resolved",
+      "asset": "BTC",
+      "pda": "A714ZUN8cKRMDKf8ndjfmMdkQKvAp9HP48pJzwihvoGa",
+      "strike": 64200,
+      "settlePrice": 64586.365000000005,
+      "winner": "yes",
+      "sig": "5xzcJVT2LKhYsituetTuGD1oEhXz2bxtC1ytSYXrzuJzET5VM5pufWe7uRJsk7Kx7Hk4qPJVYht1p7GrvJBCF9mH"
+    },
+    {
+      "ts": 1794731855,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "H8J6Fhd39bXhSnkWBaZu3H78WYGRVzDD1TPLBxPXcoJ8",
+      "what": "engine_winnings",
+      "amount": 103.919999,
+      "sig": "5gwDyQXCiTCpW1YsDxbAo5vRq4cPnUWdW2pVU9JirJ4pT6ZoHX2mpTjxyovzkCa6mMieuxFkYhRKbUNxTEjj6U6v"
+    },
+    {
+      "ts": 1794731851,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "H8J6Fhd39bXhSnkWBaZu3H78WYGRVzDD1TPLBxPXcoJ8",
+      "what": "lp_residuals",
+      "sig": "367VVLxYddkaBVJvXgRdqvAFemwfr8cs9zCyKBrvujgpWFNe9pngPLYFNJ7RnzZz9WgAaMZvYZwReMyEUyL7mD8i"
+    },
+    {
+      "ts": 1794731849,
+      "kind": "market_resolved",
+      "asset": "SOL",
+      "pda": "H8J6Fhd39bXhSnkWBaZu3H78WYGRVzDD1TPLBxPXcoJ8",
+      "strike": 70,
+      "settlePrice": 70.405,
+      "winner": "yes",
+      "sig": "3YAUq9YE4nTipaveQWnyByzpD14LCsYVVFfy37EPdyZKxwx7voBM7G8Brn2GYcg4gFUMNKTnWgb4tKKvVhkoBe7m"
+    },
+    {
+      "ts": 1794731814,
+      "kind": "market_create_failed",
+      "asset": "ETH",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
+    {
+      "ts": 1794731813,
+      "kind": "market_create_failed",
+      "asset": "BTC",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
+    {
+      "ts": 1794731812,
+      "kind": "market_create_failed",
+      "asset": "SOL",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
     {
       "ts": 1794728335,
       "kind": "claim",
@@ -824,122 +923,12 @@
       "strike": 64800,
       "seedBps": 4995,
       "sig": "3ddDPziwnnrmzQCsLBkZytGHN7EmBUA8UdD7iRk48gJVzSWib6EeiQZPiJUUrSrGiDVq46USHThqRqqsY9p2k1V1"
-    },
-    {
-      "ts": 1794720978,
-      "kind": "market_created",
-      "asset": "SOL",
-      "pda": "BvxzfA1sn1wNj3iU6qgQoJfGbUSUpZtKsmNZgwjr5C9x",
-      "strike": 71,
-      "seedBps": 4560,
-      "sig": "4ZffaqZS2Q1GchaTwcwhFcexnrKpQugyDppz9GCWndxrLrAZd9JB6xdbiNPJQ5xwdbSedZKazDVECMbiEHMCwbmd"
-    },
-    {
-      "ts": 1794717531,
-      "kind": "swap",
-      "agent": "marketmaker",
-      "pda": "5rmeeFSVJMauNHPEKMD5vMwAsQcmBtZsU3P1bmTsVLwy",
-      "direction": "usdcToNo",
-      "amountUsdc": 4,
-      "expectedOut": 7.296663,
-      "sig": "5AKVzdxp4X6D6wMMyXTSK5WtJP3DUZMzDtB5DuD1thCgnxgrfAr58ef8L5qocAXgE5XzxXZ7NVaTpfMC2pmkVADz"
-    },
-    {
-      "ts": 1794717527,
-      "kind": "swap",
-      "agent": "forecaster",
-      "pda": "EnHVpVgXNdZPoU4iZPhpj8ww1w93ZYECRiMopbY9BVtp",
-      "direction": "usdcToNo",
-      "amountUsdc": 15.007361683586456,
-      "expectedOut": 27.616539,
-      "sig": "5uq4qB55Yzg72bx8kCT5BFfifr7D1xzNLTD7X3WfHiRuYzznwtVPGciZSgbue5pYmvqoMtnqsdUgK71zxEBnyBh5"
-    },
-    {
-      "ts": 1794717518,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "8Aaob3uJACi8cCo55HSGfSWtYCM3KwxLoSRFDT53AqF5",
-      "what": "engine_winnings",
-      "amount": 100,
-      "sig": "4r6FQQWx5PPK6zKJTT4jvHUV8gBY7sSoVBrPSrSe7H4NmMdGTJS8h5aQFMVeF1asdCwBbC7GjhwNStXXkazCd26P"
-    },
-    {
-      "ts": 1794717515,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "8Aaob3uJACi8cCo55HSGfSWtYCM3KwxLoSRFDT53AqF5",
-      "what": "lp_residuals",
-      "sig": "5Lx5ChEDB17D3bjxVv5XFPWuCe7HKcq8FEyXe9a2u8oWdYkSejVuK6G4nfnztCovVCDxNssbX3TjtuYquU3u4iGa"
-    },
-    {
-      "ts": 1794717512,
-      "kind": "market_resolved",
-      "asset": "ETH",
-      "pda": "8Aaob3uJACi8cCo55HSGfSWtYCM3KwxLoSRFDT53AqF5",
-      "strike": 1820,
-      "settlePrice": 1819.3899999999999,
-      "winner": "no",
-      "sig": "4cKakZYqjVqgtRTu6c8TcmoqFXM8Dk9a5bhgUqKjQbgBUmsbqVPSyTpMeU3f8hbfCELe6hR8VfF4RgFa243So2WC"
-    },
-    {
-      "ts": 1794717502,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "Et4sJtk1ULEdvXHrE2vTHys4iUf9UfQ8CdHZLXgpMnB4",
-      "what": "engine_winnings",
-      "amount": 99.999999,
-      "sig": "4UPy4fGarGvsTTrxpJjKcP4WLEwQty6GkRdMn1SKb5FjXv3afvLz3UAkMdCSg81PCdQyTxNwzEswxTJ9WebNaRp"
-    },
-    {
-      "ts": 1794717499,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "Et4sJtk1ULEdvXHrE2vTHys4iUf9UfQ8CdHZLXgpMnB4",
-      "what": "lp_residuals",
-      "sig": "5vrPqAHHEGwDMpsPJ1gWDxjJ9LhJV5SPeUnJsJMBHZuiEJ9qWyRoitTxsTmjxzidQVeHwTbmwFwaYVvAWxXciiy4"
-    },
-    {
-      "ts": 1794717496,
-      "kind": "market_resolved",
-      "asset": "BTC",
-      "pda": "Et4sJtk1ULEdvXHrE2vTHys4iUf9UfQ8CdHZLXgpMnB4",
-      "strike": 65100,
-      "settlePrice": 64948.600000000006,
-      "winner": "no",
-      "sig": "2HHekyUU7kLXR18ffuWsQ8FSmxNkE1JQhAn61pGkB4WxJQvrNcTzh3EBis5w6iX1XpbiEs1rWS8R9NNUJS5SisDL"
-    },
-    {
-      "ts": 1794717487,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "7zuDrqErNc1b7w3iecgLVsviATfUXhg4pUT3P11aHkZa",
-      "what": "engine_winnings",
-      "amount": 99.999999,
-      "sig": "2zqqpwySAi7hu5spHpgmJKYMjmjjeKDzt1y5KnW3yBLKUXEbQjzUJqfGzBUNjBXkCzk9YGZaCbwQWSGc7cpKnneH"
-    },
-    {
-      "ts": 1794717483,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "7zuDrqErNc1b7w3iecgLVsviATfUXhg4pUT3P11aHkZa",
-      "what": "lp_residuals",
-      "sig": "2gE7gAenFR26ps4WcH8Yiw7VqBkhnCWqZi41KRVKm64jKq9hyWc7pBHGE9YG9bhZZkBBSkuKZgYjB8v2UhFu7C5d"
-    },
-    {
-      "ts": 1794717481,
-      "kind": "market_resolved",
-      "asset": "SOL",
-      "pda": "7zuDrqErNc1b7w3iecgLVsviATfUXhg4pUT3P11aHkZa",
-      "strike": 72,
-      "settlePrice": 71.44,
-      "winner": "no",
-      "sig": "3J726xDpfFjdh5giaMHv8o6PUNULBjWbEamahpcRTYeG9w4hWo7mJehqv6bMKaA2PY4KYfVJAaDsFoizBJGoJQfF"
     }
   ],
   "totals": {
     "marketsCreated": 39,
     "agentSwaps": 43,
     "agentVolumeUsdc": 281.01,
-    "claims": 90
+    "claims": 96
   }
 }
