@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794750627,
+  "generatedAt": 1794754225,
   "engineWallet": "9vBCGRVRbhjDN4MABdDj5VqJGfb8PoTJFvRXe6P5HySt",
   "markets": [
     {
@@ -469,11 +469,123 @@
       "seedBps": 3364,
       "createdTs": 1794750111,
       "endTs": 1794753711,
+      "winner": "no",
+      "settlePrice": 71.005
+    },
+    {
+      "pda": "3KnTHr25KDZEBw5eWkzQPA5DkX2HVxg4qYo2bZnyk3gt",
+      "asset": "SOL",
+      "strike": 71,
+      "seedBps": 6247,
+      "createdTs": 1794754110,
+      "endTs": 1794757710,
       "winner": null,
       "settlePrice": null
     }
   ],
   "activity": [
+    {
+      "ts": 1794754217,
+      "kind": "claim",
+      "agent": "forecaster",
+      "pda": "DQs6VrVUhEm8p5MKK17ne37n4JykWQbLSXLsMHgr24Va",
+      "amount": 36.632042,
+      "sig": "2xQ5rPuLcoghNJtxJFMgq4hN9Sph31jXMLmQTUJcZzVVV5LgVGNwAJusuokab2zzhKyx9q16NrZjfe8oT5HJCFnM"
+    },
+    {
+      "ts": 1794754208,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "3KnTHr25KDZEBw5eWkzQPA5DkX2HVxg4qYo2bZnyk3gt",
+      "direction": "usdcToYes",
+      "amountUsdc": 4,
+      "expectedOut": 6.206819,
+      "sig": "2xhZMPepw3HoLS3cV1gsTPvQsQvfqBCAVXrmmVgjMARCx1gwicoBTWJVUFnKpxQSA8uEECxDmU3uJS5T8EVkHYdK"
+    },
+    {
+      "ts": 1794754187,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "DQs6VrVUhEm8p5MKK17ne37n4JykWQbLSXLsMHgr24Va",
+      "what": "engine_winnings",
+      "amount": 103.822161,
+      "sig": "5wffJa8DEFcSTotL2LmaN3kXaDYfPweBEN55oqgkr1hfXQ5v1oy4FUj7jPREx28WjvwXh6sJxZteG3avvi4uxrCi"
+    },
+    {
+      "ts": 1794754184,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "DQs6VrVUhEm8p5MKK17ne37n4JykWQbLSXLsMHgr24Va",
+      "what": "lp_residuals",
+      "sig": "4Roth7agSfUrjbhiaKopbnLPt8f5f89NhVUmU5gTR6cfnptmPPrijo8kY8XkU9v6D5eWcA4MA4iWCcBhqEZRr3iA"
+    },
+    {
+      "ts": 1794754181,
+      "kind": "market_resolved",
+      "asset": "SOL",
+      "pda": "DQs6VrVUhEm8p5MKK17ne37n4JykWQbLSXLsMHgr24Va",
+      "strike": 73,
+      "settlePrice": 71.005,
+      "winner": "no",
+      "sig": "5gyZ9FaaK3pXqRM6uWD4hkLZmbDF24NxkmE6AXxc7rsT5H6TWGAL6hJxydXQwsqHY4WjEYnZENtNQj8r9rcQdiPV"
+    },
+    {
+      "ts": 1794754116,
+      "kind": "market_create_failed",
+      "asset": "ETH",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
+    {
+      "ts": 1794754115,
+      "kind": "market_create_failed",
+      "asset": "BTC",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
+    },
+    {
+      "ts": 1794754114,
+      "kind": "market_created",
+      "asset": "SOL",
+      "pda": "3KnTHr25KDZEBw5eWkzQPA5DkX2HVxg4qYo2bZnyk3gt",
+      "strike": 71,
+      "seedBps": 6247,
+      "sig": "38V1Cx7udHzQsp6YrLe9wuJX3CDSqHSG4xDHKxsn8MapSbuH17UtAwgBhvcMxz5ciy6WsfFbXX7FTDGmfRH8e9fL"
+    },
+    {
+      "ts": 1794753861,
+      "kind": "market_create_failed",
+      "asset": "ETH",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
+    {
+      "ts": 1794753860,
+      "kind": "market_create_failed",
+      "asset": "BTC",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
+    {
+      "ts": 1794753859,
+      "kind": "market_create_failed",
+      "asset": "SOL",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
+    {
+      "ts": 1794753813,
+      "kind": "market_create_failed",
+      "asset": "ETH",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
+    {
+      "ts": 1794753812,
+      "kind": "market_create_failed",
+      "asset": "BTC",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
+    {
+      "ts": 1794753810,
+      "kind": "market_create_failed",
+      "asset": "SOL",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
     {
       "ts": 1794750616,
       "kind": "swap",
@@ -880,123 +992,12 @@
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794739124,
-      "kind": "market_create_failed",
-      "asset": "BTC",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794739123,
-      "kind": "market_create_failed",
-      "asset": "SOL",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794735470,
-      "kind": "market_create_failed",
-      "asset": "ETH",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794735468,
-      "kind": "market_create_failed",
-      "asset": "BTC",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794735467,
-      "kind": "market_create_failed",
-      "asset": "SOL",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794731887,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "2mfEbWJajyDAg42vLYppXc3hsQb67fMiQXegmfDjfA8X",
-      "what": "engine_winnings",
-      "amount": 103.919999,
-      "sig": "3Pacg3gzhduAmnubKCmPELDefAoUtAnAFMEdbi4Dnjqx1WKFxwNKNc6bVuoLwWqFrNuMpdqtCX6nUA52yHrnQhV9"
-    },
-    {
-      "ts": 1794731884,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "2mfEbWJajyDAg42vLYppXc3hsQb67fMiQXegmfDjfA8X",
-      "what": "lp_residuals",
-      "sig": "656SJ97aqouJyvH4MgRqHfKcxNTjDZRMRZRLSSrXq7f7DTFtJSv2X6AZMXkEV1v1kKWzLubKfv6NZ7E2yB5S4brP"
-    },
-    {
-      "ts": 1794731881,
-      "kind": "market_resolved",
-      "asset": "ETH",
-      "pda": "2mfEbWJajyDAg42vLYppXc3hsQb67fMiQXegmfDjfA8X",
-      "strike": 1785,
-      "settlePrice": 1796.7849999999999,
-      "winner": "yes",
-      "sig": "2ZivCsrKMZxHYpEmXzne7MPranYpjjPTbPhDvGo3yrmMx2CWpd33h2CaM8GizhG3cbjNMpKtZ4yNNH1WR8rJycc6"
-    },
-    {
-      "ts": 1794731871,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "A714ZUN8cKRMDKf8ndjfmMdkQKvAp9HP48pJzwihvoGa",
-      "what": "engine_winnings",
-      "amount": 103.919999,
-      "sig": "2odcfD9NMZ1YmFBcS2RHru5RqwbguZFv713a5adCaCBTZEJiMmDdkMq9RRQ8TH7bHLBFVqrzJus115vvkmkmFhhB"
-    },
-    {
-      "ts": 1794731867,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "A714ZUN8cKRMDKf8ndjfmMdkQKvAp9HP48pJzwihvoGa",
-      "what": "lp_residuals",
-      "sig": "2VdnjsE3Cm1G5skzxccNpGYavN2GFrzbWQC4Zx8vXfbZz7AKHZPYFRKnRnD9ZJLQT8d2rJ97LSkHtEeyuPzLZXBz"
-    },
-    {
-      "ts": 1794731865,
-      "kind": "market_resolved",
-      "asset": "BTC",
-      "pda": "A714ZUN8cKRMDKf8ndjfmMdkQKvAp9HP48pJzwihvoGa",
-      "strike": 64200,
-      "settlePrice": 64586.365000000005,
-      "winner": "yes",
-      "sig": "5xzcJVT2LKhYsituetTuGD1oEhXz2bxtC1ytSYXrzuJzET5VM5pufWe7uRJsk7Kx7Hk4qPJVYht1p7GrvJBCF9mH"
-    },
-    {
-      "ts": 1794731855,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "H8J6Fhd39bXhSnkWBaZu3H78WYGRVzDD1TPLBxPXcoJ8",
-      "what": "engine_winnings",
-      "amount": 103.919999,
-      "sig": "5gwDyQXCiTCpW1YsDxbAo5vRq4cPnUWdW2pVU9JirJ4pT6ZoHX2mpTjxyovzkCa6mMieuxFkYhRKbUNxTEjj6U6v"
-    },
-    {
-      "ts": 1794731851,
-      "kind": "claim",
-      "agent": "engine",
-      "pda": "H8J6Fhd39bXhSnkWBaZu3H78WYGRVzDD1TPLBxPXcoJ8",
-      "what": "lp_residuals",
-      "sig": "367VVLxYddkaBVJvXgRdqvAFemwfr8cs9zCyKBrvujgpWFNe9pngPLYFNJ7RnzZz9WgAaMZvYZwReMyEUyL7mD8i"
-    },
-    {
-      "ts": 1794731849,
-      "kind": "market_resolved",
-      "asset": "SOL",
-      "pda": "H8J6Fhd39bXhSnkWBaZu3H78WYGRVzDD1TPLBxPXcoJ8",
-      "strike": 70,
-      "settlePrice": 70.405,
-      "winner": "yes",
-      "sig": "3YAUq9YE4nTipaveQWnyByzpD14LCsYVVFfy37EPdyZKxwx7voBM7G8Brn2GYcg4gFUMNKTnWgb4tKKvVhkoBe7m"
     }
   ],
   "totals": {
-    "marketsCreated": 47,
-    "agentSwaps": 53,
-    "agentVolumeUsdc": 354.29,
-    "claims": 111
+    "marketsCreated": 48,
+    "agentSwaps": 54,
+    "agentVolumeUsdc": 358.29,
+    "claims": 114
   }
 }
