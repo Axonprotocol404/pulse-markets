@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794908823,
+  "generatedAt": 1795430994,
   "engineWallet": "9vBCGRVRbhjDN4MABdDj5VqJGfb8PoTJFvRXe6P5HySt",
   "markets": [
     {
@@ -481,374 +481,438 @@
       "endTs": 1794757710,
       "winner": "yes",
       "settlePrice": 71.045
+    },
+    {
+      "pda": "6fdZdnPQjJKWpaKy3rvzrWx8af6ZHniN7buBznnfLduG",
+      "asset": "SOL",
+      "strike": 72,
+      "seedBps": 6080,
+      "createdTs": 1795427287,
+      "endTs": 1795430887,
+      "winner": "yes",
+      "settlePrice": 72.31
+    },
+    {
+      "pda": "8KCqcgyBbYa5NpK7Q11AeYSTbE7YkPDH5NoAcKyG8Wxg",
+      "asset": "BTC",
+      "strike": 61400,
+      "seedBps": 5001,
+      "createdTs": 1795427287,
+      "endTs": 1795430887,
+      "winner": "no",
+      "settlePrice": 61346.28
     }
   ],
   "activity": [
     {
-      "ts": 1794908794,
+      "ts": 1795430993,
+      "kind": "claim",
+      "agent": "marketmaker",
+      "pda": "8KCqcgyBbYa5NpK7Q11AeYSTbE7YkPDH5NoAcKyG8Wxg",
+      "amount": 15.194953,
+      "sig": "2SaNXt3x8oaHHap4vCx4HrsXcLvxHCKxtyQAcJDDw7sH5M9PSzVKP44wFs2k43zsqPafb7aCMUVU1mfL7L8PTuYY"
+    },
+    {
+      "ts": 1795430984,
+      "kind": "claim",
+      "agent": "forecaster",
+      "pda": "6fdZdnPQjJKWpaKy3rvzrWx8af6ZHniN7buBznnfLduG",
+      "amount": 36.332816,
+      "sig": "3LyLmGDbhSB1gMMX7S4WdTS1y8Q17rjM4wWXnZEhpB6zxouG8KKhfRehz2RhjyoaqWPs7ywVPEzkg14XxJEF5V8V"
+    },
+    {
+      "ts": 1795430965,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "8KCqcgyBbYa5NpK7Q11AeYSTbE7YkPDH5NoAcKyG8Wxg",
+      "what": "engine_winnings",
+      "amount": 92.645045,
+      "sig": "ar9vVfUU75ukn8wmJZD5bTSWmFafnyDLPg5tMjpABxDPqM9pNHx6hTcJWv6JewtVffDqSn641xxQNHjkA9zATHE"
+    },
+    {
+      "ts": 1795430962,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "8KCqcgyBbYa5NpK7Q11AeYSTbE7YkPDH5NoAcKyG8Wxg",
+      "what": "lp_residuals",
+      "sig": "4GYXb4zNNFm4uXZZkVBsBmcPaNE23dbQfHCCTYcdPKxgTv2eFzX4wdRkSZURV3U4NzziVgWazRxW8uP8vUrEb53C"
+    },
+    {
+      "ts": 1795430959,
+      "kind": "market_resolved",
+      "asset": "BTC",
+      "pda": "8KCqcgyBbYa5NpK7Q11AeYSTbE7YkPDH5NoAcKyG8Wxg",
+      "strike": 61400,
+      "settlePrice": 61346.28,
+      "winner": "no",
+      "sig": "5qKHtdH8EdgSCKWpjjvERTSY2snafu4kFL3PWDWjBu4QhkoxPvh3DK7iKzo4GLrHDg7TH71nVeoV259K4qWL8CjN"
+    },
+    {
+      "ts": 1795430949,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "6fdZdnPQjJKWpaKy3rvzrWx8af6ZHniN7buBznnfLduG",
+      "what": "engine_winnings",
+      "amount": 92.087183,
+      "sig": "sE5uAKF88WM8SoMpYhyQsrL9E5tuibZiEQ7MbsuHH4ZVGm1pzomYVPf6XHwyqW6JthKT6wmUDfmuH2w7K3ABgxp"
+    },
+    {
+      "ts": 1795430946,
+      "kind": "claim",
+      "agent": "engine",
+      "pda": "6fdZdnPQjJKWpaKy3rvzrWx8af6ZHniN7buBznnfLduG",
+      "what": "lp_residuals",
+      "sig": "eYp8dYLSyV4ZqW8Ca6v3XCezK2HWf1hAdwMTvYbGZ4t4AW2NiUGPwTrKahdkAUSDxv7rAC44VnNjo8J97Xb8D9G"
+    },
+    {
+      "ts": 1795430943,
+      "kind": "market_resolved",
+      "asset": "SOL",
+      "pda": "6fdZdnPQjJKWpaKy3rvzrWx8af6ZHniN7buBznnfLduG",
+      "strike": 72,
+      "settlePrice": 72.31,
+      "winner": "yes",
+      "sig": "3fWXio4iJwbZF7jwipcfEBFVw4VfHrE9fguzmabx3uBvBEUY1YcNeiayAjfCH5yM329Ex8tnV7YfrRFvHKEHbMB7"
+    },
+    {
+      "ts": 1795430245,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "8KCqcgyBbYa5NpK7Q11AeYSTbE7YkPDH5NoAcKyG8Wxg",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 7.449407,
+      "sig": "3Hsjg1ySXTZrcnZyEaGX1dasc5FrMpCuSrqAtrSoDuyaSGW7G3SA23DM8kwZhfH2c19E71kvQQzoC72KZsGh7UuV"
+    },
+    {
+      "ts": 1795430242,
+      "kind": "swap",
+      "agent": "forecaster",
+      "pda": "6fdZdnPQjJKWpaKy3rvzrWx8af6ZHniN7buBznnfLduG",
+      "direction": "usdcToYes",
+      "amountUsdc": 25,
+      "expectedOut": 36.335821,
+      "sig": "66eKxxS5j62CzYFG2bqmUkfpxE2P3g69bP6D1TNoVkpwyRaSCGEoQfL1V7dfBQ3MZJKvZ1j7CkMa58w4wtU2LuPS"
+    },
+    {
+      "ts": 1795430200,
+      "kind": "market_create_failed",
+      "asset": "ETH",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
+    {
+      "ts": 1795430198,
+      "kind": "market_create_failed",
+      "asset": "BTC",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
+    {
+      "ts": 1795430197,
+      "kind": "market_create_failed",
+      "asset": "SOL",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
+    {
+      "ts": 1795427321,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "8KCqcgyBbYa5NpK7Q11AeYSTbE7YkPDH5NoAcKyG8Wxg",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 7.745705,
+      "sig": "2o1E243Axngqr2xGg1WPMXz3mq3okEmFaQwq1VKNAMikNJQU22ADKBk9EtvDnemuraSobo6NcrSNBDTc24YzxWvp"
+    },
+    {
+      "ts": 1795427317,
+      "kind": "swap",
+      "agent": "marketmaker",
+      "pda": "6fdZdnPQjJKWpaKy3rvzrWx8af6ZHniN7buBznnfLduG",
+      "direction": "usdcToNo",
+      "amountUsdc": 4,
+      "expectedOut": 9.74171,
+      "sig": "nTGhEFM5MLJFEpukys6XNakYsJMyHgA3RaBdvSriA7mUHhNHoqWZtv9aPmdf71qhBajLXVgYcgbsM5zcBhmEmqh"
+    },
+    {
+      "ts": 1795427295,
+      "kind": "market_create_failed",
+      "asset": "ETH",
+      "error": "Simulation failed. \nMessage: Transaction simulation failed: Transaction results in an account (0) with insufficient funds for rent. \nLogs: \n[\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y success\",\n  \"Program GV1FMGHRYBjQLaghE5fnGuYCuCcpdt3GD5xEX3TwN16y invoke [1]\",\n  \"Program log: Instruc"
+    },
+    {
+      "ts": 1795427294,
+      "kind": "market_created",
+      "asset": "BTC",
+      "pda": "8KCqcgyBbYa5NpK7Q11AeYSTbE7YkPDH5NoAcKyG8Wxg",
+      "strike": 61400,
+      "seedBps": 5001,
+      "sig": "eTMKYPHq7a2XbX1Wa66ANyRUs74mzHcHM7nRzffYQ4F69XgGbQkgsEGFnvxhkqZSV8SEWZoo5LhpRQnnSL19Cot"
+    },
+    {
+      "ts": 1795427291,
+      "kind": "market_created",
+      "asset": "SOL",
+      "pda": "6fdZdnPQjJKWpaKy3rvzrWx8af6ZHniN7buBznnfLduG",
+      "strike": 72,
+      "seedBps": 6080,
+      "sig": "2muEXDXeoKKhbEgwhYQ29ZosaSUEVBfYCB1LjUH1nKkboQLxsLNJhc3bD7bY5ZL64QoEMp1BNJ8vFphUhE3jYS3W"
+    },
+    {
+      "ts": 1795426587,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794908793,
+      "ts": 1795426586,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794908793,
+      "ts": 1795426585,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794908191,
+      "ts": 1795422983,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794908190,
+      "ts": 1795422982,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794908189,
+      "ts": 1795422981,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794905129,
+      "ts": 1795419383,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794905128,
+      "ts": 1795419382,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794905127,
+      "ts": 1795419381,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794901452,
+      "ts": 1795415963,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794901451,
+      "ts": 1795415961,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794901450,
+      "ts": 1795415960,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794897804,
+      "ts": 1795412270,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794897803,
+      "ts": 1795412269,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794897801,
+      "ts": 1795412268,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794894133,
+      "ts": 1795408634,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794894132,
+      "ts": 1795408631,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794894130,
+      "ts": 1795408629,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794890415,
+      "ts": 1795404980,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794890414,
+      "ts": 1795404979,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794890413,
+      "ts": 1795404978,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794886792,
-      "kind": "market_create_failed",
-      "asset": "BTC",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794886791,
-      "kind": "market_create_failed",
-      "asset": "SOL",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794886774,
+      "ts": 1795402459,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794886773,
+      "ts": 1795402458,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794886772,
+      "ts": 1795402457,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794883091,
+      "ts": 1795401390,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794883090,
+      "ts": 1795401389,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794883089,
+      "ts": 1795401388,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794879421,
+      "ts": 1795397797,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794879420,
+      "ts": 1795397796,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794879418,
+      "ts": 1795397795,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794875846,
+      "ts": 1795394214,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794875845,
+      "ts": 1795394213,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794875845,
+      "ts": 1795394212,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794875741,
+      "ts": 1795390596,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794875740,
+      "ts": 1795390595,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794875739,
+      "ts": 1795390594,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794875716,
+      "ts": 1795390585,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794875715,
+      "ts": 1795390584,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794875714,
+      "ts": 1795390583,
       "kind": "market_create_failed",
       "asset": "SOL",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794868803,
+      "ts": 1795387005,
       "kind": "market_create_failed",
       "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794868802,
+      "ts": 1795387004,
       "kind": "market_create_failed",
       "asset": "BTC",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     },
     {
-      "ts": 1794868801,
+      "ts": 1795387003,
       "kind": "market_create_failed",
       "asset": "SOL",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794865133,
-      "kind": "market_create_failed",
-      "asset": "ETH",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794865131,
-      "kind": "market_create_failed",
-      "asset": "BTC",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794865130,
-      "kind": "market_create_failed",
-      "asset": "SOL",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794861466,
-      "kind": "market_create_failed",
-      "asset": "ETH",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794861465,
-      "kind": "market_create_failed",
-      "asset": "BTC",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794861464,
-      "kind": "market_create_failed",
-      "asset": "SOL",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794857845,
-      "kind": "market_create_failed",
-      "asset": "ETH",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794857843,
-      "kind": "market_create_failed",
-      "asset": "BTC",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794857842,
-      "kind": "market_create_failed",
-      "asset": "SOL",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794857838,
-      "kind": "market_create_failed",
-      "asset": "ETH",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794857837,
-      "kind": "market_create_failed",
-      "asset": "BTC",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794857836,
-      "kind": "market_create_failed",
-      "asset": "SOL",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794857826,
-      "kind": "market_create_failed",
-      "asset": "ETH",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794857825,
-      "kind": "market_create_failed",
-      "asset": "BTC",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794857823,
-      "kind": "market_create_failed",
-      "asset": "SOL",
-      "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
-    },
-    {
-      "ts": 1794854206,
-      "kind": "market_create_failed",
-      "asset": "ETH",
       "error": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\",\n  \"Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]\",\n  \"Program log: IX: Create Metadata Ac"
     }
   ],
   "totals": {
-    "marketsCreated": 48,
-    "agentSwaps": 55,
-    "agentVolumeUsdc": 383.29,
-    "claims": 118
+    "marketsCreated": 50,
+    "agentSwaps": 59,
+    "agentVolumeUsdc": 420.29,
+    "claims": 124
   }
 }
